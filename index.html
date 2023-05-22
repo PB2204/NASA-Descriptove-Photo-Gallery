@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA's Descriptive Photo Gallary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+</head>
+
+<body>
+    <div class="loader hidden">
+        <img src="rocket.svg" alt="animation">
+    </div>
+    <div class="container">
+        <div class="navigation-container">
+            <span class="background"></span>
+            <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDom(favorites)">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
+            </span>
+            <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="getNasaPictures()">Load More NASA Images</h3>
+            </span>
+        </div>
+        <div class="name"><h1>NASA's Descriptive Photo Gallary</h1></div>
+        <!--Images container-->
+        <div class="images-container"></div>
+    </div>
+    <div class="save-confirmed" hidden>
+        <h1>ADDED!</h1>
+    </div>
+    <center>
+        <footer style="background-color: bisque; padding: 10px;">
+            Copyright &copy; 2023 || <a href="https://pabitrabanerjee.newsgoogle.org"
+                style="text-decoration: none;"><span
+                    style="color: crimson; font-family: cursive; font-weight: 700;">Pabitra Banerjee</span></a>
+        </footer>
+    </center>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
